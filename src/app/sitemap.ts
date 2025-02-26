@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
-import { getAllMdxMetadata } from "../lib/mdx";
+import { getAllMdxMetadata } from "../mdx";
+import blog from "../../blog.config";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://activazon.com";
+  const baseUrl = blog.baseUrl;
 
   // Fetch all blog posts
   const posts = await getAllMdxMetadata();

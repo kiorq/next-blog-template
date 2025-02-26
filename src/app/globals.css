@@ -3,41 +3,38 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #FFFFFF;
-  --primary: #00A3FF;
+  --background: 10, 10, 10;
+  --foreground: 255, 255, 255;
+  --primary: 50, 243, 174;
+  --secondary: 0, 224, 255;
 
-
+  /* Gradient colors */
+  --gradient-primary: rgba(var(--primary), 0.6);
+  --gradient-secondary: rgba(var(--secondary), 0.6);
+  --gradient-highlight: rgba(255, 255, 255, 0.2);
+  --gradient-primary-soft: rgba(var(--primary), 0.5);
+  --gradient-secondary-soft: rgba(var(--secondary), 0.5);
+  --gradient-shadow: rgba(0, 0, 0, 0.7);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
   position: relative;
-
 }
 
 .mesh-gradient-bg {
-
-
-  background: radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.6) 12%, transparent 50%),
-    radial-gradient(circle at 85% 15%, rgba(0, 163, 255, 0.6) 12%, transparent 50%),
-    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.2) 10%, transparent 40%),
-    radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.5) 15%, transparent 45%),
-    radial-gradient(circle at 70% 35%, rgba(0, 163, 255, 0.5) 15%, transparent 45%),
-    radial-gradient(circle at 50% 5%, rgba(0, 0, 0, 0.7) 30%, var(--background) 50%),
-    var(--background);
+  background: radial-gradient(circle at 15% 15%, var(--gradient-primary) 12%, transparent 50%),
+    radial-gradient(circle at 85% 15%, var(--gradient-secondary) 12%, transparent 50%),
+    radial-gradient(circle at 50% 10%, var(--gradient-highlight) 10%, transparent 40%),
+    radial-gradient(circle at 30% 30%, var(--gradient-primary-soft) 15%, transparent 45%),
+    radial-gradient(circle at 70% 35%, var(--gradient-secondary-soft) 15%, transparent 45%),
+    radial-gradient(circle at 50% 5%, var(--gradient-shadow) 30%, rgb(var(--background)) 50%),
+    rgb(var(--background));
 
   background-size: cover;
   background-attachment: fixed;
-
 
   @apply translate-y-[-40vh] md:translate-y-[-60vh] opacity-50 w-screen h-screen absolute top-0 left-0 z-[-1];
 }

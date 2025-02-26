@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs/promises";
 import { compileMDX } from "next-mdx-remote/rsc";
-import { MDX_COMPONENTS } from "./components";
+import MDX_COMPONENTS from "./components/all";
 import remarkGfm from "remark-gfm";
 
 export type MdxFrontMatter = {

@@ -1,6 +1,7 @@
 {
-  "name": "Activazon",
-  "short_name": "Activaozon",
+  "name": "LoomLetter",
+  "short_name": "LoomLetter",
+  "description": "LoomLetter is your go-to newsletter reader app, bringing together all your favorite newsletters in one seamless, intuitive platform. Discover, read, and enjoy a curated reading experience like no other.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
