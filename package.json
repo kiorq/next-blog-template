@@ -2,6 +2,9 @@
   "name": "next-blog",
   "version": "0.1.0",
   "private": true,
+  "author": "Kirk Douglas Jr",
+  "license": "MIT",
+  "homepage": "https://github.com/kiorq/next-blog-template",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
