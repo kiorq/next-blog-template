@@ -125,3 +125,28 @@ This repository contains a Next.js blog template that supports writing blogs in 
    - Components are automatically merged through `src/components/all.tsx`
    - Includes core components, table components, and your custom components
    - No additional configuration needed
+
+### Brand Assets Customization
+
+1. **Logo:**
+
+   - Replace `/public/logo.svg` with your own brand logo
+   - Update the SVG content or use a different image format if preferred
+
+2. **Manifest Settings:**
+
+   - Update `/public/site.webmanifest` with your app information:
+
+   ```json
+   {
+     "name": "Your App Name",
+     "short_name": "Short Name",
+     "description": "Your app description"
+     // ... existing manifest content ...
+   }
+   ```
+
+3. **Icons:**
+   - Replace the following icons in the `/public` directory with your own:
+     - `android-chrome-192x192.png`
+     - `android-chrome-512x512.png`
