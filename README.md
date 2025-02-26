@@ -11,8 +11,8 @@ This repository contains a Next.js blog template that supports writing blogs in 
 - **MDX Support:** Write your blog posts in MDX to include JSX components alongside Markdown.
 - **Content-Driven:** All blog posts are stored in the `contents/` folder for easy management.
 - **Next.js Framework:** Built on Next.js for optimal performance, SEO, and ease of deployment.
-- **Dynamic Routing:** Automatically generate routes for your blog posts based on file structure.
-- **Customizable:** Easily customize the look and feel with your own styles and components.
+- **Dynamic Routing:** Automatically generate routes for your blog posts based on content slugs.
+- **Customizable:** Easily customize the look and feel with your own styles and components using tailwindcss.
 
 ## Getting Started
 
@@ -26,6 +26,6 @@ This repository contains a Next.js blog template that supports writing blogs in 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/nextjs-mdx-blog-template.git
+   git clone git@github.com:kiorq/next-blog-template.git
    cd nextjs-mdx-blog-template
    ```
